@@ -1,0 +1,8 @@
+*.class
+*.lock
+*.log
+*.swp
+.history
+.vscode
+vendor
+debug
