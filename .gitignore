@@ -1,5 +1,4 @@
 *.class
-*.lock
 *.log
 *.swp
 .history
