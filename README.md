@@ -12,11 +12,27 @@ Even if IEEE, Castagnoli and Koopman are the most common CRC-32 polynomials, som
 
 ## Installation
 
+Open terminal and change directory to project directory. 
+
+If you have not initialized a new module in this project, run `go mod init` command.
+
+After the Go.mod file is created in the project, run the following command to get the package.
+
 `go get github.com/onurkaraoglan/go-crc32-mpeg2`
+
+Import the package into the go file you want to use
+
+```go
+import (
+	_ "github.com/onurkaraoglan/go-crc32-mpeg2"
+)
+```
+
+Then run `go mod vendor` command to add package to vendor folder.
 
 ## Usage
 
-`result := CalculateCrcMpeg2(hexData)`
+`result := crcmpeg2.CalculateCrcMpeg2(hexData)`
 
 Parameter must be byte slice and it returns uint32 as hex.
 
